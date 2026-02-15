@@ -439,11 +439,11 @@ int GameWidget::maxFoodCountForLevel(int lvl) {
 void GameWidget::updateBGM() {
     QString musicPath;
     if(score < 60)
-        musicPath = "C:/Users/Zhang_Qin/Desktop/code/Qt/Day4/music/bgm1.mp3";
+        musicPath = "/music/bgm1.mp3";
     else if(score < 120)
-        musicPath = "C:/Users/Zhang_Qin/Desktop/code/Qt/Day4/music/bgm2.mp3";
+        musicPath = "/music/bgm2.mp3";
     else
-        musicPath = "C:/Users/Zhang_Qin/Desktop/code/Qt/Day4/music/bgm3.mp3";
+        musicPath = "/music/bgm3.mp3";
 
     if (Path == musicPath)
         return;
@@ -458,4 +458,5 @@ void GameWidget::updateBGM() {
         bgmPlayer->play();
     }
 }
+
 
